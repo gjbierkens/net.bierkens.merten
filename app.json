@@ -1,0 +1,51 @@
+{
+  "id": "net.bierkens.merten",
+  "version": "1.0.0",
+  "compatibility": "5.x",
+  "sdk": 3,
+  "name": {
+    "en": "Merten Connect"
+  },
+  "description": {
+    "en": "Merten Connect support"
+  },
+  "category": [
+    "lights"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Gert-Jan Bierkens",
+    "email": "bierkens@gmail.com"
+  },
+  "drivers": [
+    {
+      "id": "merten",
+      "name": {
+        "en": "Merten"
+      },
+      "class": "remote",
+      "capabilities": [
+        "measure_battery",
+        "button"
+      ],
+      "images": {
+        "large": "/drivers/merten/assets/images/large.png",
+        "small": "/drivers/merten/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 122,
+        "productTypeId": [
+          16386
+        ],
+        "productId": [
+          1
+        ],
+        "zwaveAllianceProductId": 321
+      }
+    }
+  ]
+}
